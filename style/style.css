@@ -1,0 +1,113 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* variabel */
+:root{
+   --light: #edf6f9;
+   --light-green: #83c5be;
+   --lighten-green: #81dad171;
+   --dark-green:#006d77;
+   --btn: #51a9a0;
+   --yellow: #ffa600;
+   --red: #d62828;
+   --padding: 15px;
+   --margin10:10px;
+}
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #edf6f9;
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+   color:var(--dark-green);
+   padding: var(--padding);
+   text-transform: capitalize;
+}
+
+button{
+   background-color: var(--btn);
+   border: none;
+   padding:10px;
+   margin: var(--margin10);
+   color:#ffffff;
+   font-size: 1rem;
+   font-weight: 700;
+   text-transform: capitalize;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+table{
+   border: 1.5px solid var(--dark-green);
+   margin: var(--padding);
+   background-color: #f8fbfc;
+   text-align: center;
+   font-weight: 500;
+   
+}
+
+table th{
+   background-color: var(--light-green);
+   padding: 10px;
+   border-left: 2px solid var(--light-green);
+}
+
+table td{
+   padding: 10px;
+}
+
+table tr:nth-child(odd){
+   background-color: var(--lighten-green);
+}
+
+/* style halaman tambah data */
+.center{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+form{
+   background-color: #f8fbfc;
+   padding: var(--padding);
+   border: 1px solid black;
+   border-radius: 15px;
+   width: 400px;
+}
+
+.input-div{
+   display: flex;
+   justify-content: space-between;
+   margin: var(--margin10);
+}
+
+.input-div label{
+   text-transform: capitalize;
+}
+
+.input-div input{
+   height: 30px;
+}
+
+.input-div input:focus{
+   border:none;
+}
+
+a{
+   text-decoration: none;
+   text-transform: capitalize;
+   color: var(--yellow);
+}
+a:nth-child(2){
+   color: var(--red);
+}
